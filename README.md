@@ -21,8 +21,8 @@
 ```
 /*
 Program to implement 
-Developed by   :Vincent isaac jeyaraj J
-RegisterNumber :212220230060  
+Developed by   :Vigneshwar S
+RegisterNumber :212220230058  
 */
 ```
 ```python
@@ -31,7 +31,7 @@ splitfolders.ratio("Male and Female face dataset", output="output", seed=1337, r
 
 import matplotlib.pyplot as plt
 import matplotlib.image as mping
-img = mping.imread('steve.jpg')
+img = mping.imread('rash.jpg')
 plt.imshow(img)
 
 import tensorflow as tf
@@ -50,7 +50,7 @@ test = train_datagen.flow_from_directory("output/val/",target_size=(224,224),see
 
 from tensorflow.keras.preprocessing import image
 
-test_image = image.load_img('steve.jpg', target_size=(224,224))
+test_image = image.load_img('rash.jpg', target_size=(224,224))
 test_image = image.img_to_array(test_image)
 test_image = tf.expand_dims(test_image,axis=0)
 test_image = test_image/255.
@@ -83,13 +83,14 @@ pd.DataFrame(history.history).plot()
 
 
 ## OUTPUT:
-![Capture71](https://user-images.githubusercontent.com/75234588/173243903-8d4babef-48ec-4638-addd-4bb2f039c10c.PNG)
-![Capture72](https://user-images.githubusercontent.com/75234588/173243908-67eff571-e331-4ee8-a19b-ed1a35c95666.PNG)
-![Capture69](https://user-images.githubusercontent.com/75234588/173243911-a9ea482e-7ed7-45dd-a818-f0003974d67f.PNG)
-![Capture70](https://user-images.githubusercontent.com/75234588/173243915-97b3e7a9-137c-45f8-85c3-9facc6abd6a0.PNG)
+![Capture73](https://user-images.githubusercontent.com/77089276/174422250-ad243c83-a250-4e5f-8c0b-cdd2d0ecac5c.PNG)
+![Capture74](https://user-images.githubusercontent.com/77089276/174422253-1664ae00-58d7-4a80-9ba8-88356595b118.PNG)
+![Capture75](https://user-images.githubusercontent.com/77089276/174422256-862c5780-03ac-46f4-9373-a838a12f093b.PNG)
+![Capture76](https://user-images.githubusercontent.com/77089276/174422261-7a28e70e-89ae-4ad5-8392-911e1820390b.PNG)
 
 
-DEMO VIDEO YOUTUBE LINK:
+
+DEMO VIDEO YOUTUBE LINK:https://youtu.be/YGMhLcPNcrc
 
 
 ## RESULT: 
